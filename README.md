@@ -419,4 +419,4 @@ For more information, please reach out to the team:
 
 ---
 
-Calctra: Democratizing scientific computing for global innovation. 
+Calctra: Democratizing scientific computing for global innovation.
