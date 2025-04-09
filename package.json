@@ -1,0 +1,38 @@
+{
+  "name": "calctra",
+  "version": "0.1.0",
+  "description": "Decentralized Scientific Computing Platform on Solana",
+  "main": "index.js",
+  "scripts": {
+    "start": "serve app/frontend -s",
+    "dev": "serve app/frontend -s",
+    "build": "echo 'No build step required for MVP'",
+    "test": "echo 'No tests implemented yet'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-username/calctra.git"
+  },
+  "keywords": [
+    "solana",
+    "blockchain",
+    "scientific-computing",
+    "decentralized",
+    "resource-matching"
+  ],
+  "author": "Calctra Team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/your-username/calctra/issues"
+  },
+  "homepage": "https://github.com/your-username/calctra#readme",
+  "dependencies": {
+    "@solana/spl-token": "^0.3.8",
+    "@solana/web3.js": "^1.78.5",
+    "borsh": "^0.7.0",
+    "serve": "^14.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.9"
+  }
+} 

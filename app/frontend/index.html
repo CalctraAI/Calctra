@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calctra - Decentralized Scientific Computing Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Open Sans font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="assets/calctra-logo.svg" alt="Calctra Logo" id="logo-placeholder">
+                <h1>Calctra</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#provide-resources">Provide Resources</a></li>
+                    <li><a href="#request-computing">Request Computing</a></li>
+                    <li><a href="#token">CAL Token</a></li>
+                </ul>
+            </nav>
+            <div class="connect-wallet">
+                <button id="connect-wallet-btn">Connect Wallet</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Revolutionizing Scientific Computing</h1>
+                <p>Calctra is a decentralized platform that connects scientists with computational resources worldwide, making high-performance computing accessible to all.</p>
+                <div class="hero-buttons">
+                    <a href="#provide-resources" class="btn primary">Provide Resources</a>
+                    <a href="#request-computing" class="btn secondary">Request Computing</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="assets/hero-image.svg" alt="Calctra Platform Visualization" id="hero-placeholder">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Reshaping the Scientific Computing Ecosystem</h2>
+            <div class="about-grid">
+                <div class="about-item">
+                    <div class="icon">🌐</div>
+                    <h3>Decentralized Access</h3>
+                    <p>Breaking down barriers to computational resources, enabling researchers worldwide to access the computing power they need.</p>
+                </div>
+                <div class="about-item">
+                    <div class="icon">⚡</div>
+                    <h3>Efficient Matching</h3>
+                    <p>Our AI-driven resource matching algorithm ensures optimal allocation of computational resources based on your specific needs.</p>
+                </div>
+                <div class="about-item">
+                    <div class="icon">🔒</div>
+                    <h3>Privacy Computing</h3>
+                    <p>Advanced encryption and zero-knowledge proofs protect your data while still allowing collaborative computation.</p>
+                </div>
+                <div class="about-item">
+                    <div class="icon">💰</div>
+                    <h3>Economic Incentives</h3>
+                    <p>Fair compensation for resource providers and affordable access for researchers through our innovative token economy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Key Features</h2>
+            <div class="features-container">
+                <div class="feature">
+                    <h3>Decentralized Resource Pool</h3>
+                    <p>Access a global network of computational resources from various providers, eliminating dependency on centralized computing centers.</p>
+                </div>
+                <div class="feature">
+                    <h3>Intelligent Resource Matching</h3>
+                    <p>Our advanced algorithms match your computational needs with the most suitable resources based on multiple factors including power, cost, and location.</p>
+                </div>
+                <div class="feature">
+                    <h3>Privacy-Preserving Computation</h3>
+                    <p>Utilize sensitive data in computations without exposing the underlying information, thanks to our privacy-first approach.</p>
+                </div>
+                <div class="feature">
+                    <h3>Tokenized Incentive System</h3>
+                    <p>The CAL token powers our ecosystem, providing fair compensation for resource providers and a payment mechanism for users.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="provide-resources" class="provide-resources">
+        <div class="container">
+            <h2>Provide Computational Resources</h2>
+            <p class="section-description">Monetize your idle computing resources by making them available on the Calctra network.</p>
+            
+            <div class="resource-form">
+                <form id="resource-registration-form">
+                    <div class="form-group">
+                        <label for="resource-type">Resource Type</label>
+                        <select id="resource-type" required>
+                            <option value="">Select a type</option>
+                            <option value="cpu">CPU Cluster</option>
+                            <option value="gpu">GPU Cluster</option>
+                            <option value="tpu">TPU Cluster</option>
+                            <option value="fpga">FPGA Array</option>
+                            <option value="quantum">Quantum Processor</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="computation-power">Computational Power (FLOPS)</label>
+                        <input type="number" id="computation-power" required min="1">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="available-memory">Available Memory (GB)</label>
+                        <input type="number" id="available-memory" required min="1">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="location">Geographic Location</label>
+                        <select id="location" required>
+                            <option value="">Select a region</option>
+                            <option value="north-america">North America</option>
+                            <option value="south-america">South America</option>
+                            <option value="europe">Europe</option>
+                            <option value="asia">Asia</option>
+                            <option value="africa">Africa</option>
+                            <option value="oceania">Oceania</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="price-per-unit">Price per Unit (CAL/hour)</label>
+                        <input type="number" id="price-per-unit" required min="0.01" step="0.01">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="availability">Availability Schedule</label>
+                        <select id="availability" required>
+                            <option value="24-7">24/7 Availability</option>
+                            <option value="business-hours">Business Hours Only</option>
+                            <option value="nights-weekends">Nights and Weekends</option>
+                            <option value="custom">Custom Schedule</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn primary">Register Resource</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="request-computing" class="request-computing">
+        <div class="container">
+            <h2>Request Computing Resources</h2>
+            <p class="section-description">Submit your computational task to find the best matching resources on the Calctra network.</p>
+            
+            <div class="request-form">
+                <form id="computation-request-form">
+                    <div class="form-group">
+                        <label for="computation-type">Computation Type</label>
+                        <select id="computation-type" required>
+                            <option value="">Select a type</option>
+                            <option value="simulation">Scientific Simulation</option>
+                            <option value="data-analysis">Data Analysis</option>
+                            <option value="ml-training">Machine Learning Training</option>
+                            <option value="rendering">3D Rendering</option>
+                            <option value="optimization">Numerical Optimization</option>
+                            <option value="custom">Custom Computation</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="required-power">Required Computational Power (FLOPS)</label>
+                        <input type="number" id="required-power" required min="1">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="required-memory">Required Memory (GB)</label>
+                        <input type="number" id="required-memory" required min="1">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="max-price">Maximum Price (CAL/hour)</label>
+                        <input type="number" id="max-price" required min="0.01" step="0.01">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="preferred-location">Preferred Geographic Location (Optional)</label>
+                        <select id="preferred-location">
+                            <option value="">No Preference</option>
+                            <option value="north-america">North America</option>
+                            <option value="south-america">South America</option>
+                            <option value="europe">Europe</option>
+                            <option value="asia">Asia</option>
+                            <option value="africa">Africa</option>
+                            <option value="oceania">Oceania</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="duration-estimate">Estimated Duration (hours)</label>
+                        <input type="number" id="duration-estimate" required min="0.1" step="0.1">
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn primary">Submit Request</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="token" class="token">
+        <div class="container">
+            <h2>CAL Token</h2>
+            <div class="token-info">
+                <div class="token-icon">
+                    <img src="assets/cal-token.svg" alt="CAL Token" id="token-placeholder">
+                </div>
+                <div class="token-details">
+                    <h3>The Utility Token Powering Calctra</h3>
+                    <p>The CAL token is the backbone of the Calctra ecosystem, facilitating resource trading, governance, and value distribution.</p>
+                    
+                    <div class="token-functions">
+                        <div class="token-function">
+                            <h4>Payment Medium</h4>
+                            <p>Used to pay for computational resources on the network.</p>
+                        </div>
+                        <div class="token-function">
+                            <h4>Data Access Permission</h4>
+                            <p>Grants access rights to datasets while ensuring privacy and security.</p>
+                        </div>
+                        <div class="token-function">
+                            <h4>Governance</h4>
+                            <p>Stake tokens to participate in platform governance decisions.</p>
+                        </div>
+                        <div class="token-function">
+                            <h4>Value Capture</h4>
+                            <p>Benefits from platform growth and increased transaction volume.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="token-actions">
+                        <button id="buy-token-btn" class="btn primary">Get CAL Tokens</button>
+                        <button id="stake-token-btn" class="btn secondary">Stake Tokens</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/calctra-logo.svg" alt="Calctra Logo" id="footer-logo-placeholder">
+                    <h2>Calctra</h2>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Platform</h3>
+                        <ul>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#roadmap">Roadmap</a></li>
+                            <li><a href="#whitepaper">Whitepaper</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="#documentation">Documentation</a></li>
+                            <li><a href="#api">API</a></li>
+                            <li><a href="#partners">Partners</a></li>
+                            <li><a href="#case-studies">Case Studies</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Community</h3>
+                        <ul>
+                            <li><a href="#github">GitHub</a></li>
+                            <li><a href="#twitter">Twitter</a></li>
+                            <li><a href="#discord">Discord</a></li>
+                            <li><a href="#forum">Forum</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Calctra. All rights reserved.</p>
+                <p>Decentralizing scientific computing worldwide.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html> 
