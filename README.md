@@ -1,7 +1,7 @@
 # Calctra: Decentralized Scientific Computing Platform
 
 <p align="center">
-  <img src="https://calctra.fun/assets/images/calctra-logo.png" alt="Calctra Logo">
+  <img src="assets/img/logo.png" alt="Calctra Logo" width="300">
 </p>
 
 Calctra is a revolutionary decentralized platform that connects scientists with computational resources worldwide, making high-performance computing accessible to all.
@@ -88,46 +88,46 @@ Calctra employs a multi-layered architecture designed for scalability, security,
 ## System Workflow
 
 ```
-┌───────────────┐     ┌───────────────┐     ┌───────────────┐
-│ Resource      │     │ Calctra       │     │ Computation   │
-│ Providers     │────▶│ Platform      │────▶│ Users         │
-└───────────────┘     └───────────────┘     └───────────────┘
-       │                      │                      │
-       ▼                      ▼                      ▼
-┌───────────────┐     ┌───────────────┐     ┌───────────────┐
-│ Register      │     │ Resource      │     │ Submit        │
-│ Resources     │     │ Matching      │     │ Computation   │
-└───────────────┘     └───────────────┘     └───────────────┘
-       │                      │                      │
-       │                      ▼                      │
-       │              ┌───────────────┐             │
-       └─────────────▶│ Smart         │◀────────────┘
-                      │ Contracts     │
-                      └───────────────┘
-                              │
-                              ▼
-                      ┌───────────────┐
-                      │ CAL Token     │
-                      │ Transactions  │
-                      └───────────────┘
-                              │
-                              ▼
-                      ┌───────────────┐
-                      │ Computation   │
-                      │ Execution     │
-                      └───────────────┘
-                              │
-                              ▼
-                      ┌───────────────┐
-                      │ Result        │
-                      │ Verification  │
-                      └───────────────┘
-                              │
-                              ▼
-                      ┌───────────────┐
-                      │ Payment &     │
-                      │ Settlement    │
-                      └───────────────┘
+┌───────────────�?    ┌───────────────�?    ┌───────────────�?
+�?Resource      �?    �?Calctra       �?    �?Computation   �?
+�?Providers     │────▶│ Platform      │────▶│ Users         �?
+└───────────────�?    └───────────────�?    └───────────────�?
+       �?                     �?                     �?
+       �?                     �?                     �?
+┌───────────────�?    ┌───────────────�?    ┌───────────────�?
+�?Register      �?    �?Resource      �?    �?Submit        �?
+�?Resources     �?    �?Matching      �?    �?Computation   �?
+└───────────────�?    └───────────────�?    └───────────────�?
+       �?                     �?                     �?
+       �?                     �?                     �?
+       �?             ┌───────────────�?            �?
+       └─────────────▶│ Smart         │◀────────────�?
+                      �?Contracts     �?
+                      └───────────────�?
+                              �?
+                              �?
+                      ┌───────────────�?
+                      �?CAL Token     �?
+                      �?Transactions  �?
+                      └───────────────�?
+                              �?
+                              �?
+                      ┌───────────────�?
+                      �?Computation   �?
+                      �?Execution     �?
+                      └───────────────�?
+                              �?
+                              �?
+                      ┌───────────────�?
+                      �?Result        �?
+                      �?Verification  �?
+                      └───────────────�?
+                              �?
+                              �?
+                      ┌───────────────�?
+                      �?Payment &     �?
+                      �?Settlement    �?
+                      └───────────────�?
 ```
 
 ## Functional Modules
