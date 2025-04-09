@@ -1,25 +1,3 @@
-<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#3498db;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#2c3e50;stop-opacity:1" />
-    </linearGradient>
-  </defs>
-  <circle cx="100" cy="100" r="80" fill="url(#grad1)" />
-  <text x="100" y="115" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="white">Calctra</text>
-  <g fill="none" stroke="white" stroke-width="2">
-    <path d="M60,80 L140,80" />
-    <path d="M50,100 L150,100" />
-    <path d="M60,120 L140,120" />
-    <circle cx="70" cy="80" r="5" fill="white" />
-    <circle cx="130" cy="80" r="5" fill="white" />
-    <circle cx="60" cy="100" r="5" fill="white" />
-    <circle cx="140" cy="100" r="5" fill="white" />
-    <circle cx="80" cy="120" r="5" fill="white" />
-    <circle cx="120" cy="120" r="5" fill="white" />
-  </g>
-</svg>
-
 # Calctra: Decentralized Scientific Computing Platform
 
 Calctra is a revolutionary decentralized platform that connects scientists with computational resources worldwide, making high-performance computing accessible to all.
