@@ -1,5 +1,9 @@
 # Calctra: Decentralized Scientific Computing Platform
 
+<p align="center">
+  <img src="https://calctra.fun/assets/images/calctra-logo.png" alt="Calctra Logo">
+</p>
+
 Calctra is a revolutionary decentralized platform that connects scientists with computational resources worldwide, making high-performance computing accessible to all.
 
 <p align="center">
