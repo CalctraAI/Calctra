@@ -28,7 +28,6 @@ Calctra is a revolutionary decentralized platform that connects scientists with 
   <a href="https://calctra.fun/"><img src="https://img.shields.io/badge/website-calctra.fun-blue" alt="Official Website"></a>
   <a href="https://github.com/CalctraAI/Calctra/releases"><img src="https://img.shields.io/github/v/release/CalctraAI/Calctra" alt="Latest Release"></a>
   <a href="https://github.com/CalctraAI/Calctra/blob/main/LICENSE"><img src="https://img.shields.io/github/license/CalctraAI/Calctra" alt="License"></a>
-  <a href="https://discord.gg/calctra"><img src="https://img.shields.io/discord/937463446751928370?color=5865F2&label=discord" alt="Discord"></a>
   <a href="https://x.com/calctra_sol"><img src="https://img.shields.io/badge/Twitter-%40calctra__sol-blue" alt="Twitter"></a>
 </p>
 
@@ -413,7 +412,6 @@ For more information, please reach out to the team:
 
 - **Website**: [calctra.fun](https://calctra.fun/)
 - **Email**: info@calctra.io
-- **Discord**: [Join our server](https://discord.gg/calctra)
 - **Twitter**: [@calctra_sol](https://x.com/calctra_sol)
 - **GitHub**: [github.com/CalctraAI/Calctra](https://github.com/CalctraAI/Calctra)
 
